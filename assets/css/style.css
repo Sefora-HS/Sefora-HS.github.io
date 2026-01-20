@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Helvetica Modern";
+    src: url("/assets/fonts/helvetica-now-display.ttf");
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Helvetica Modern';
+    font-size: 18px;
+}
+
+.header {
+
+}
