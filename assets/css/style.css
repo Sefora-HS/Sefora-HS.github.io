@@ -1,15 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: "Helvetica Modern";
     src: url("/assets/fonts/helvetica-now-display.ttf");
+}
+
+@font-face {
+    font-family: "Script";
+    src: url("/assets/fonts/Aston\ Script.ttf");
 }
 
 ul {
     list-style: none;
 }
 
-a {
+a, a:visited, a:hover, a:active {
+    color: white;
     text-decoration: none;
 }
+
 
 body {
     background-color: black;
@@ -126,9 +139,10 @@ body {
 }
 
 .hero {
-    height: 90vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
+    margin-top: 4rem;
 }
 
 .hero-title {
@@ -143,6 +157,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: .5rem;
+    margin-top: 4rem;
 }
 
 .cta {
@@ -190,3 +205,75 @@ body {
     width: 25rem;
     margin-right: 2rem;
 }
+
+.about {
+    height: 70vh;
+    display: flex;
+    padding-top: 3rem;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding-right: 4rem; 
+}
+
+.about-text {
+    max-width: 90%;
+    font-size: 2.5rem;
+    text-align: right;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.about-text.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.frame {
+    width: 25rem;
+    padding: 1.5rem;
+    background: #fff;
+    box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.25);
+    margin-left: 4rem;
+    transform: translateX(-150px) rotate(10deg);
+    opacity: 0;
+    box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.25);
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.frame.show {
+  transform: translateX(0) rotate(5deg);
+  opacity: 1;
+}
+
+.photo {
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    display: block;
+}
+
+.description {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.description-text {
+    font-size: 1rem;
+    font-family: 'Script';
+    text-transform: none;
+    font-weight: 500;
+    color: black;
+}
+
