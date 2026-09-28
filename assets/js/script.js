@@ -2,7 +2,8 @@
     1:{logo:'AG',bg:'var(--sky)',name:'Association Graine D éveil',company:'Préstation CM'},
     2:{logo:'AS',bg:'var(--coral)',name:'Association SoeurLidaire',company:'Création de Flyers'},
     3:{logo:'CC',bg:'var(--lavender)',name:'Crowned Copnsulting',company:'Stage'},
-    4:{logo:'RE',bg:'var(--lavender)',name:'Reelia',company:'Stage'}
+    4:{logo:'RE',bg:'var(--lavender)',name:'Reelia',company:'Stage'},
+    5:{logo:'AR',bg:'var(--pink)',name:'Arciya',company:'Freelance'}
   };
 
   function openCommentModal(id){
